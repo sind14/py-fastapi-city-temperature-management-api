@@ -3,7 +3,7 @@ from typing import List
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from city import schemas, crud
+from . import schemas, crud
 from settings import SessionLocal
 
 router = APIRouter(prefix="/cities", tags=["Cities"])
